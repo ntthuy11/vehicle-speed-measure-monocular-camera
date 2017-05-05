@@ -1,0 +1,325 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\My090310_vehicle_speed_measure.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\090310_vehicle_speed_measure.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MY090310_VEHICLE_SPEED_MEASURE_DIALOG DIALOGEX 0, 0, 570, 373
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "090310_vehicle_speed_measure"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Load image...",IDC_BUTTON_LOAD_IMG,22,34,133,14
+    PUSHBUTTON      "Quit",IDC_BUTTON_QUIT,438,352,125,14
+    PUSHBUTTON      "Affine Rectify",IDC_BUTTON_AFFINE_RECTIFY_ONE_VANISHING_POINT,87,56,60,27
+    LTEXT           "ShiftX:",IDC_STATIC,29,58,22,8
+    LTEXT           "ShiftY:",IDC_STATIC,27,74,22,8
+    EDITTEXT        IDC_EDIT_ONE_VANISHING_POINT_SHIFTX,51,56,30,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ONE_VANISHING_POINT_SHIFTY,51,70,30,14,ES_AUTOHSCROLL
+    GROUPBOX        "2. Vehicle detection",IDC_STATIC,167,20,254,53
+    PUSHBUTTON      "Get fore-obj",IDC_BUTTON_GET_FORE_OBJ,365,30,50,38
+    LTEXT           "binarize-thr:",IDC_STATIC,215,31,40,8
+    EDITTEXT        IDC_EDIT_BINARIZE_THR,257,28,25,14,ES_AUTOHSCROLL
+    LTEXT           "mor.close structure size:",IDC_STATIC,175,44,80,8
+    EDITTEXT        IDC_EDIT_MOR_CLOSE_STRUCTURE_SIZE,257,41,25,14,ES_AUTOHSCROLL
+    LTEXT           "iteration:",IDC_STATIC,303,44,30,8
+    EDITTEXT        IDC_EDIT_MOR_CLOSE_ITERATION,335,41,25,14,ES_AUTOHSCROLL
+    LTEXT           "num. blobs detected:",IDC_STATIC,187,58,69,8
+    EDITTEXT        IDC_EDIT_N_BLOBS_DETECTED,257,54,25,14,ES_AUTOHSCROLL
+    LTEXT           "blob area thr:",IDC_STATIC,289,58,45,8
+    EDITTEXT        IDC_EDIT_BLOB_AREA_THR,335,54,25,14,ES_AUTOHSCROLL
+    GROUPBOX        "1. Rectify with 1 vanishing point",IDC_STATIC,15,20,147,123
+    GROUPBOX        "3. Vehicle tracking",IDC_STATIC,167,78,254,66
+    PUSHBUTTON      "Track",IDC_BUTTON_VEHICLE_TRACKING,366,123,50,14
+    LTEXT           "num. blobs detected:",IDC_STATIC,177,95,69,8
+    EDITTEXT        IDC_EDIT_N_BLOBS_DETECTED_FOR_TRACKING,247,90,25,14,ES_AUTOHSCROLL
+    LTEXT           "matching win height:",IDC_STATIC,179,108,67,8
+    EDITTEXT        IDC_EDIT_MATCHING_WIN_HEIGHT,247,105,25,14,ES_AUTOHSCROLL
+    LTEXT           "velocity (pixels):",IDC_STATIC,192,122,54,8
+    EDITTEXT        IDC_EDIT_VELOCITY,247,119,25,14,ES_AUTOHSCROLL
+    LTEXT           "coefficient threshold:",IDC_STATIC,287,95,69,8
+    EDITTEXT        IDC_EDIT_COEFFICIENT_THR,357,90,25,14,ES_AUTOHSCROLL
+    GROUPBOX        "Using Image",IDC_STATIC,7,7,421,144
+    GROUPBOX        "(MAIN) --- Using Image Sequence",IDC_STATIC,7,159,421,205
+    PUSHBUTTON      "Browse img..",IDC_BUTTON_SEQ_BROWSE_IMG,372,302,50,27,BS_MULTILINE
+    PUSHBUTTON      "Run",IDC_BUTTON_SEQ_RUN,372,330,50,27
+    LTEXT           "Binarize-threshold:",IDC_STATIC,140,253,61,8
+    EDITTEXT        IDC_EDIT_SEQ_BINARIZE_THR,156,264,25,14,ES_AUTOHSCROLL
+    LTEXT           "VP(X,Y):",IDC_STATIC,17,250,28,8
+    LTEXT           "shiftY:",IDC_STATIC,86,250,22,8
+    EDITTEXT        IDC_EDIT_SEQ_VANISHING_POINT_X,45,247,18,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SEQ_VANISHING_POINT_Y,63,247,18,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SEQ_SHIFT_Y,108,247,18,14,ES_AUTOHSCROLL
+    LTEXT           "Structure size:",IDC_STATIC,216,255,48,8
+    EDITTEXT        IDC_EDIT_SEQ_MOR_CLOSE_STRUCTURE_SIZE,266,253,25,14,ES_AUTOHSCROLL
+    LTEXT           "Iteration:",IDC_STATIC,234,271,32,8
+    EDITTEXT        IDC_EDIT_SEQ_MOR_CLOSE_ITERATION,266,268,25,14,ES_AUTOHSCROLL
+    LTEXT           "N. detected blobs:",IDC_STATIC,318,253,60,8
+    EDITTEXT        IDC_EDIT_SEQ_N_BLOBS_DETECTED,379,251,25,14,ES_AUTOHSCROLL
+    LTEXT           "Blob area threshold:",IDC_STATIC,312,268,66,8
+    EDITTEXT        IDC_EDIT_SEQ_BLOB_AREA_THR,379,267,25,14,ES_AUTOHSCROLL
+    GROUPBOX        "3. Crop rectified img to eliminate noise",IDC_STATIC,278,171,143,60
+    LTEXT           "From top:",IDC_STATIC,284,189,32,8
+    LTEXT           "(pixels)",IDC_STATIC,318,217,24,8
+    EDITTEXT        IDC_EDIT_SEQ_CROP_FROM_TOP,317,187,25,14,ES_AUTOHSCROLL
+    LTEXT           "From bottom:",IDC_STATIC,347,189,44,8
+    EDITTEXT        IDC_EDIT_SEQ_CROP_FROM_BOTTOM,391,187,25,14,ES_AUTOHSCROLL
+    LTEXT           "From left:",IDC_STATIC,284,204,32,8
+    EDITTEXT        IDC_EDIT_SEQ_CROP_FROM_LEFT,317,201,25,14,ES_AUTOHSCROLL
+    LTEXT           "From right:",IDC_STATIC,355,204,36,8
+    EDITTEXT        IDC_EDIT_SEQ_CROP_FROM_RIGHT,391,201,25,14,ES_AUTOHSCROLL
+    LTEXT           "(pixels)",IDC_STATIC,392,217,24,8
+    GROUPBOX        "1. Create ""empty"" background",IDC_STATIC,13,171,117,60
+    PUSHBUTTON      "Create",IDC_BUTTON_SEQ_CREATE_BACKGROUND,73,187,54,14
+    PUSHBUTTON      "Browse imgs..",IDC_BUTTON_SEQ_BROWSE_BACKGROUND_IMG,19,187,54,14
+    GROUPBOX        "Projection Histogram Matching",IDC_STATIC,438,7,122,90
+    PUSHBUTTON      "Load 2 images...",IDC_BUTTON_PHM_LOAD_IMG,444,62,61,14
+    PUSHBUTTON      "Comp. bckgrd",IDC_BUTTON_PHM_COMPENSATE_BACKGROUND,444,76,61,14
+    LTEXT           "dx:",IDC_STATIC,510,63,12,8
+    LTEXT           "dy:",IDC_STATIC,510,73,12,8
+    LTEXT           "-100",IDC_STATIC_PHM_DX,524,63,20,8
+    LTEXT           "-100",IDC_STATIC_PHM_DY,524,73,20,8
+    LTEXT           "Range for dx:",IDC_STATIC,445,22,46,8
+    EDITTEXT        IDC_EDIT_PHM_RANGE_DX_FROM,492,19,25,14,ES_AUTOHSCROLL
+    LTEXT           "to",IDC_STATIC,519,22,8,8
+    EDITTEXT        IDC_EDIT_PHM_RANGE_DX_TO,527,19,25,14,ES_AUTOHSCROLL
+    LTEXT           "Range for dy:",IDC_STATIC,445,36,46,8
+    EDITTEXT        IDC_EDIT_PHM_RANGE_DY_FROM,492,33,25,14,ES_AUTOHSCROLL
+    LTEXT           "to",IDC_STATIC,519,36,8,8
+    EDITTEXT        IDC_EDIT_PHM_RANGE_DY_TO,527,33,25,14,ES_AUTOHSCROLL
+    LTEXT           "Smoothing window size:",IDC_STATIC,445,50,77,8
+    EDITTEXT        IDC_EDIT_PHM_SMOOTH_WIN_SIZE,527,47,25,14,ES_AUTOHSCROLL
+    LTEXT           "Range for dx:",IDC_STATIC,140,186,46,8
+    EDITTEXT        IDC_EDIT_SEQ_PHM_RANGE_DX_FROM,187,183,25,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SEQ_PHM_RANGE_DX_TO,213,183,25,14,ES_AUTOHSCROLL
+    LTEXT           "Range for dy:",IDC_STATIC,140,200,46,8
+    EDITTEXT        IDC_EDIT_SEQ_PHM_RANGE_DY_FROM,187,197,25,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SEQ_PHM_RANGE_DY_TO,213,197,25,14,ES_AUTOHSCROLL
+    LTEXT           "Smooth-window size:",IDC_STATIC,140,214,68,8
+    EDITTEXT        IDC_EDIT_SEQ_PHM_SMOOTH_WIN_SIZE,213,211,25,14,ES_AUTOHSCROLL
+    GROUPBOX        "2. Background compensation using PHM",IDC_STATIC,133,171,141,60
+    LTEXT           "dx:",IDC_STATIC,244,184,12,8
+    LTEXT           "dy:",IDC_STATIC,244,197,12,8
+    LTEXT           "-100",IDC_STATIC_SEQ_PHM_DX,257,184,16,8
+    LTEXT           "-100",IDC_STATIC_SEQ_PHM_DY,257,197,16,8
+    GROUPBOX        "4. Rectify with 1 vanishing point",IDC_STATIC,13,235,117,60
+    GROUPBOX        "5. Thresholding",IDC_STATIC,133,235,73,60
+    GROUPBOX        "6. Morphology-close",IDC_STATIC,209,235,87,60
+    GROUPBOX        "8plus. Tracking using Particle Filter",IDC_STATIC,134,299,176,59
+    LTEXT           "MatchWin height:",IDC_STATIC,27,313,57,8
+    EDITTEXT        IDC_EDIT_SEQ_MATCHING_WIN_HEIGHT,85,311,25,14,ES_AUTOHSCROLL
+    LTEXT           "Velocity (pixels):",IDC_STATIC,30,328,54,8
+    EDITTEXT        IDC_EDIT_SEQ_VELOCITY,85,325,25,14,ES_AUTOHSCROLL
+    LTEXT           "Coefficient thr:",IDC_STATIC,34,343,50,8
+    EDITTEXT        IDC_EDIT_SEQ_COEFFICIENT_THR,85,340,25,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Find VP",IDC_BUTTON_FIND_VANISHING_POINT,80,263,45,14
+    PUSHBUTTON      "Browse img...",IDC_BUTTON_FIND_VANISHING_POINT_BROWSE_IMG,18,263,61,14
+    LTEXT           "voteThr:",IDC_STATIC,18,280,29,8
+    LTEXT           "level:",IDC_STATIC,89,281,18,8
+    EDITTEXT        IDC_EDIT_SEQ_VANISHING_POINT_VOTE_THR,47,279,18,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SEQ_VANISHING_POINT_LEVEL,108,279,18,14,ES_AUTOHSCROLL
+    GROUPBOX        "(Tools) Experiments for the paper",IDC_STATIC,438,102,122,180
+    GROUPBOX        "Compare PHM to MinIFD",IDC_STATIC,442,114,114,75
+    PUSHBUTTON      "PHM",IDC_BUTTON_EX_COMPARE_PHM_IFD_PHM,446,126,35,14
+    LTEXT           "avg dx:",IDC_STATIC,450,142,26,8
+    LTEXT           "max dx:",IDC_STATIC,449,154,27,8
+    LTEXT           "avg dy:",IDC_STATIC,502,142,26,8
+    LTEXT           "max dy:",IDC_STATIC,501,154,27,8
+    LTEXT           "avg compensation error:",IDC_STATIC,449,165,80,8
+    LTEXT           "-1",IDC_STATIC_EX_PHM_IFD_AVG_DX,477,142,20,8
+    LTEXT           "-1",IDC_STATIC_EX_PHM_IFD_MAX_DX,477,154,20,8
+    LTEXT           "-1",IDC_STATIC_EX_PHM_IFD_AVG_DY,529,142,20,8
+    LTEXT           "-1",IDC_STATIC_EX_PHM_IFD_MAX_DY,529,154,20,8
+    LTEXT           "-1",IDC_STATIC_EX_PHM_IFD_AVG_ERROR,529,165,20,8
+    PUSHBUTTON      "IFD",IDC_BUTTON_EX_COMPARE_PHM_IFD_IFD,481,126,35,14
+    PUSHBUTTON      "NoCom.",IDC_BUTTON_EX_COMPARE_PHM_IFD_NO,516,126,35,14
+    LTEXT           "avg time difference:",IDC_STATIC,449,176,66,8
+    LTEXT           "-1",IDC_STATIC_EX_PHM_IFD_AVG_TIMEDIFF,516,176,33,8
+    PUSHBUTTON      "Load (created) background..",IDC_BUTTON_SEQ_LOAD_1_BACKGROUND_IMG,19,201,107,14
+    GROUPBOX        "8. Tracking using Correlation",IDC_STATIC,14,299,117,59
+    CONTROL         "Tracking using Correlation",IDC_RADIO_BLOB_DETECTION_TRACKING,
+                    "Button",BS_AUTORADIOBUTTON,28,299,99,10
+    CONTROL         "Tracking using Particle Filter",IDC_RADIO_PARTICLE_FILTER,
+                    "Button",BS_AUTORADIOBUTTON,160,299,105,10
+    GROUPBOX        "7. Blob detection",IDC_STATIC,299,235,122,60
+    LTEXT           "N. particles:",IDC_STATIC,151,312,40,8
+    LTEXT           "Position sigma:",IDC_STATIC,142,327,48,8
+    LTEXT           "Velocity sigma:",IDC_STATIC,142,341,48,8
+    LTEXT           "Particle width:",IDC_STATIC,229,312,46,8
+    LTEXT           "Particle height:",IDC_STATIC,227,327,49,8
+    EDITTEXT        IDC_EDIT_SEQ_PF_N_PARTICLES,192,311,25,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SEQ_PF_POSITION_SIGMA,192,325,25,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SEQ_PF_VELOCITY_SIGMA,192,339,25,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SEQ_PF_PARTICLE_WIDTH,277,311,25,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SEQ_PF_PARTICLE_HEIGHT,277,325,25,14,ES_AUTOHSCROLL
+    LTEXT           "Processing time:",IDC_STATIC,315,307,53,8
+    CTEXT           "-1",IDC_STATIC_PROCESSING_TIME,314,319,51,8
+    GROUPBOX        "Other Tools",IDC_STATIC,441,193,114,75
+    PUSHBUTTON      "Convert RGB to gray",IDC_BUTTON_EX_CONVERT_RGB_TO_GRAY,449,208,81,14
+    PUSHBUTTON      "Batch rename",IDC_BUTTON_EX_BATCH_RENAME,449,226,81,14
+    PUSHBUTTON      "Combine M2D results",IDC_BUTTON_EX_COMBINE_M2D_RESULTS,449,244,81,14
+    LTEXT           "error:",IDC_STATIC,509,84,20,8
+    LTEXT           "-100",IDC_STATIC_PHM_ERROR,529,84,27,8
+    LTEXT           "Vanishing point X:",IDC_STATIC,29,95,58,8
+    LTEXT           "Vanishing point Y:",IDC_STATIC,29,111,58,8
+    EDITTEXT        IDC_EDIT_ONE_VANISHING_POINT_X,88,93,30,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ONE_VANISHING_POINT_Y,88,107,30,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "090310_vehicle_speed_measure.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "090310_vehicle_speed_measure.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MY090310_VEHICLE_SPEED_MEASURE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 563
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 366
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\My090310_vehicle_speed_measure.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
